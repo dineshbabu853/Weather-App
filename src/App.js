@@ -21,7 +21,7 @@ class App extends React.Component {
     const country = e.target.elements.country.value;
     e.preventDefault();
     await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}`
     )
       .then(async (res) => {
         const response = await res.json();
