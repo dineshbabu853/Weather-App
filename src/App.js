@@ -25,7 +25,6 @@ class App extends React.Component {
     )
       .then(async (res) => {
         const response = await res.json();
-
         if (city && country) {
           this.setState({
             temperature: response.main.temp,
@@ -47,7 +46,6 @@ class App extends React.Component {
         });
       });
   };
-
   render() {
     return (
       <div>
